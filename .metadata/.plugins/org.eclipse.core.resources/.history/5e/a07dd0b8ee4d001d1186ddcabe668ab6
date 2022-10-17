@@ -1,0 +1,23 @@
+package sec_functionalinterfaceinjavaAPI.EX03;
+
+import java.util.function.Predicate;
+
+public class Predicate_FuntionalInterface {
+
+	public static void main(String[] args) {
+//		#1. 익명이너클래스 방법으로 객체 생성
+		Predicate<String> p = new Predicate<String>() {
+
+			public boolean test(String t) {
+				return (t.length()>0)? true:false; //입력이 됐나 안됐나 확인
+			}
+			
+		};
+		
+		//#2. Predicate<T>의 람다식 표현
+		//1. 기본형
+		Predicate<String> p1 = (str) -> (str.length()>0)? true: false;
+		System.out.println(p1.test("안녕"));
+	}
+
+}

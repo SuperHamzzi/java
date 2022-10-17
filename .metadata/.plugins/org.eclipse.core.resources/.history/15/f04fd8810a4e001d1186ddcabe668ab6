@@ -1,0 +1,32 @@
+package sec_functionalinterfaceinjavaAPI.EX05;
+
+import java.util.function.BinaryOperator;
+import java.util.function.UnaryOperator;
+
+public class UnaryBinaryOperation_FunctionallInterface {
+
+	public static void main(String[] args) {
+		
+		
+		///#1 익명이너클래스를 이요한 객체 생성
+//		Function<T,T> = UnaryOperator<T>  
+		UnaryOperator<Integer> uo = new UnaryOperator<Integer>() {
+
+			public Integer apply(Integer t) {
+					return t*2;
+			}
+	};
+	
+	BinaryOperator<String> bo = new BinaryOperator<String>() {
+			public String apply(String t, String u) {
+				return t+u;
+			}
+		};
+		
+		//#2.람다식
+		//@1. 기본형
+		UnaryOperator<Integer> uo1 = value ->value *2;
+		System.out.println(uo1.apply(5));
+	}
+
+}

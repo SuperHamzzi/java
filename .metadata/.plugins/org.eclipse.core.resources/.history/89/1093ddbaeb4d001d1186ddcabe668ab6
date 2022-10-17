@@ -1,0 +1,22 @@
+package sec_functionalinterfaceinjavaAPI.EX02;
+
+import java.util.function.Supplier;
+
+public class Suppler_FuntionallInterface {
+
+	public static void main(String[] args) {
+		
+		
+		//#1. 익명이너클래스 방법 객체 생성
+		Supplier<String> s= new Supplier<String>() {
+
+			public String get() {
+				
+				return "Supplier<T> 함수형 인터페이스";
+			}
+			
+		};
+		s.get();
+	}
+
+}

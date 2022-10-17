@@ -1,0 +1,21 @@
+package sec_functionalinterfaceinjavaAPI.EX04;
+
+import java.util.function.Function;
+
+public class FunctionalInterface {
+
+	public static void main(String[] args) {
+		//#1 익명이너클래스 방법으로 객체 생성
+		Function<String, Integer> f = new Function<String,Integer>(){
+
+			public Integer apply(String t) {
+				return t.length();
+			}
+			
+			
+		};
+		System.out.println(f.aplly("안녕"));
+
+	}
+
+}

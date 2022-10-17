@@ -1,0 +1,10 @@
+package sec_functionalinterfaceinjavaAPI.EX02;
+
+public class Suppler_FuntionallInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

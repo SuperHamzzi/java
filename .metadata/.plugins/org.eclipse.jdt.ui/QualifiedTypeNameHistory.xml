@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.function.Predicate"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.functions.Function"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="java.util.function.ToDoubleFunction"/>
+    <fullyQualifiedTypeName name="java.util.function.BinaryOperator"/>
+</qualifiedTypeNameHistroy>

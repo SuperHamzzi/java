@@ -1,0 +1,44 @@
+package sec_functionalinterfaceinjavaAPI.EX04;
+
+import java.util.function.BiFunction;
+import java.util.function.DoubleFunction;
+import java.util.function.Function;
+import java.util.function.IntFunction;
+import java.util.function.LongFunction;
+
+public class FunctionalInterface {
+
+	public static void main(String[] args) {
+		//#1 익명이너클래스 방법으로 객체 생성
+		Function<String, Integer> f = new Function<String,Integer>(){
+
+			public Integer apply(String t) {
+				return t.length();
+			}
+			
+			
+		};
+		System.out.println(f.apply("안녕"));
+		
+		
+//		/#2.Function<T,R> 람다식 표현
+//		1.기본형
+		Function<String,Integer> f1 = str1 -> str1.length();
+		System.out.println(f1.apply("안녕"));
+//		2.확장형(입력이 고정)
+		IntFunction<Double> f2 = (num)->(double)num;
+		LongFunction<String> f3 = (num)->String.valueOf(num); //long->String
+		DoubleFunction<Integer> f4 = (num)->(int)num;
+		
+		BiFunction<String,Integer,String> f5 = (name,age)->"이름은="+name+"나이는="+age;
+		
+		System.out.println(f2.apply(10));
+		System.out.println(f3.apply(20L));
+		System.out.println(f4.apply(30.5));
+		System.out.println(f5.apply("김재혁",26));
+		
+		
+		
+	}
+
+}

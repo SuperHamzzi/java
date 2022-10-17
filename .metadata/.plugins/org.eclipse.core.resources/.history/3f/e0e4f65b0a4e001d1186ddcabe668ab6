@@ -1,0 +1,10 @@
+package sec_functionalinterfaceinjavaAPI.EX05;
+
+public class UnaryBinaryOperation_FunctionallInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
